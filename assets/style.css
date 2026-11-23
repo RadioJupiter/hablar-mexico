@@ -1,0 +1,157 @@
+:root{
+  --ink:#1c1916; --muted:#5a564c; --paper:#f6f1e8; --card:#ffffff; --rule:#ddd4c4;
+  --accent:#1f4f3d; --accent-soft:#e7f0ea; --link:#1f4f3d;
+  --serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{font-size:17px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.6}
+a{color:var(--link)} a:hover{text-decoration:none}
+header.top{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:baseline;justify-content:space-between;
+  padding:1rem 1.5rem;border-bottom:1px solid var(--rule);background:var(--card);position:sticky;top:0;z-index:5}
+.brand{font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--ink);font-weight:600}
+header nav{display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-family:var(--sans);font-size:.85rem}
+header nav a{text-decoration:none;color:var(--muted)} header nav a:hover{color:var(--accent)}
+main{max-width:52rem;margin:0 auto;padding:2rem 1.25rem 4rem}
+h1{font-size:2.1rem;line-height:1.2;margin:.5rem 0 1rem;font-weight:600}
+h2{font-size:1.45rem;margin:2rem 0 .6rem;font-weight:600}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem;font-family:var(--sans);letter-spacing:.02em}
+h4{font-family:var(--sans);font-size:.95rem;margin:1.2rem 0 .3rem}
+p,li{hyphens:auto}
+blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:3px solid var(--accent);background:var(--accent-soft)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em}
+pre{background:#f4f1ea;padding:.8rem 1rem;overflow-x:auto;border-radius:4px;line-height:1.35}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-family:var(--sans);font-size:.88rem;background:var(--card)}
+th,td{border:1px solid var(--rule);padding:.4rem .55rem;text-align:left;vertical-align:top}
+th{background:var(--accent-soft)}
+table.timetable td.time{white-space:nowrap;color:var(--muted)}
+table.timetable tr.break td{background:#f6f3ec;color:var(--muted);font-style:italic}
+.lesson{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:.4rem 1.4rem 1rem;margin:1.6rem 0;scroll-margin-top:5.5rem}
+.lesson.key{border-left:4px solid var(--accent)}
+.lesson-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;border-bottom:1px solid var(--rule)}
+.lesson-head h2{margin:.9rem 0 .5rem}
+label.done{font-family:var(--sans);font-size:.85rem;white-space:nowrap;color:var(--muted)}
+.meta{font-family:var(--sans);font-size:.82rem;color:var(--muted);margin-top:.4rem}
+.keylink{text-align:right;font-family:var(--sans);font-size:.85rem}
+.crumbs{font-family:var(--sans);font-size:.82rem;color:var(--muted)}
+.note{background:var(--accent-soft);padding:.6rem .9rem;border-radius:4px;font-family:var(--sans);font-size:.9rem}
+nav.toc{display:flex;flex-wrap:wrap;gap:.4rem;font-family:var(--sans);font-size:.8rem;margin:1rem 0}
+nav.toc a{padding:.2rem .55rem;border:1px solid var(--rule);border-radius:999px;text-decoration:none;background:var(--card)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem;margin:1.5rem 0}
+.cards a{display:block;padding:1rem 1.1rem;border:1px solid var(--rule);border-radius:6px;background:var(--card);text-decoration:none;color:var(--ink)}
+.cards a strong{display:block;font-size:1.05rem;color:var(--accent)} .cards a span{font-size:.9rem;color:var(--muted)}
+ul.checklist{list-style:none;padding-left:0} ul.checklist li{padding:.25rem 0;border-bottom:1px dotted var(--rule)}
+.controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;font-family:var(--sans);font-size:.9rem;margin:1rem 0}
+button,input[type=date]{font:inherit;padding:.3rem .7rem;border:1px solid var(--rule);border-radius:4px;background:var(--card);cursor:pointer}
+details.progress-day{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:.5rem 1rem;margin:.6rem 0}
+details.progress-day summary{cursor:pointer;display:flex;justify-content:space-between;gap:1rem}
+.count{font-family:var(--sans);color:var(--muted);font-size:.85rem}
+.total{font-family:var(--sans);font-weight:600}
+.date{font-family:var(--sans);color:var(--muted)}
+/* bar models */
+.barmodel{font-family:var(--sans);font-size:.85rem;margin:1rem 0;padding:.8rem;background:#f8f6f0;border:1px solid var(--rule);border-radius:4px}
+.barmodel .row{display:flex;align-items:center;gap:.5rem;margin:.35rem 0}
+.barmodel .lbl{width:6.5rem;flex:none;color:var(--muted)}
+.barmodel .seg{border:1.5px solid var(--ink);height:1.8rem;display:flex;align-items:center;justify-content:center;background:#fff;margin-right:-1.5px}
+.barmodel .seg.u{background:var(--accent-soft)}
+.barmodel .brace{text-align:center;color:var(--muted);font-size:.8rem}
+footer{border-top:1px solid var(--rule);padding:1.5rem;text-align:center;font-family:var(--sans);font-size:.8rem;color:var(--muted)}
+@media print{header.top,footer,.keylink,label.done,nav.toc{display:none}.lesson{border:none;page-break-inside:avoid}}
+@media (max-width:600px){html{font-size:16px}h1{font-size:1.7rem}.lesson{padding:.3rem .9rem .8rem}}
+
+/* Explicit instruction */
+.learn, .watch, .together, .check, .remember, .wordlist-wrap { margin: 1.1rem 0; }
+.remember { border: 2px solid var(--ink); background: #fff; padding: .75rem 1rem; border-radius: 4px; }
+.remember > .kicker, .learn > h3, .watch > h3, .together > h3, .check > h3 {
+  font-family: var(--sans); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+  margin: 0 0 .45rem; color: var(--accent); font-weight: 700;
+}
+.remember > .kicker { color: var(--ink); }
+.watch { border-left: 3px solid var(--accent); padding: .2rem 0 .2rem 1rem; background: var(--accent-soft); border-radius: 0 4px 4px 0; }
+.watch ol.steps, .together ol.steps { padding-left: 1.2rem; }
+.watch ol.steps li, .together ol.steps li { margin: .35rem 0; }
+.together details { border: 1px solid var(--rule); background: var(--card); padding: .3rem .7rem; margin: .35rem 0; border-radius: 4px; }
+.together details summary { cursor: pointer; font-family: var(--sans); font-size: .9rem; font-weight: 600; }
+.wordlist { font-size: .92rem; }
+.wordlist th { white-space: nowrap; }
+.teach-tools { display: flex; flex-wrap: wrap; gap: .4rem .8rem; align-items: center; margin: 0 0 .6rem; }
+button.listen {
+  font-family: var(--sans); font-size: .8rem; padding: .2rem .65rem; border: 1px solid var(--accent);
+  background: var(--accent-soft); color: var(--accent); border-radius: 999px; cursor: pointer;
+}
+button.listen:hover { background: var(--card); }
+button.listen[aria-pressed="true"] { background: var(--accent); color: #fff; }
+button.listen:disabled { opacity: .55; cursor: not-allowed; }
+button.listen-inline { margin-right: .4rem; padding: .1rem .45rem; font-size: .72rem; }
+.listen-note { font-family: var(--sans); font-size: .78rem; color: var(--muted); }
+.review-banner { font-family: var(--sans); font-size: .88rem; border: 1px solid var(--rule); background: var(--accent-soft); padding: .5rem .75rem; border-radius: 4px; }
+@media print {
+  button.listen, .teach-tools, .listen-note { display: none !important; }
+  .together details { border: none; }
+  .together details + details { margin-top: 0; }
+}
+
+/* Singapore pictorials: place-value discs and number bonds */
+.discs{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;margin:.5rem 0}
+
+/* Number bonds and discs: size the shape to the text, not the other way around. */
+.nbond{display:flex;flex-direction:column;align-items:center;width:auto;min-width:12rem;max-width:24rem;margin:.8rem 0;font-family:var(--sans)}
+.nbond .whole,.nbond .parts span{
+  border:2px solid var(--ink);border-radius:999px;width:auto;min-width:2.8rem;min-height:2.8rem;height:auto;
+  padding:.4rem .75rem;display:inline-flex;align-items:center;justify-content:center;
+  font-weight:700;background:#fff;white-space:nowrap;line-height:1.15;font-size:.85rem;text-align:center;
+  box-sizing:border-box;
+}
+.nbond .arms{align-self:stretch;min-width:9rem;height:1.15rem;border:none;border-bottom:2px solid var(--ink);border-left:2px solid var(--ink);border-right:2px solid var(--ink);margin:.15rem 0 0}
+.nbond .parts{display:flex;justify-content:space-between;align-items:flex-start;align-self:stretch;gap:1rem;margin-top:.25rem}
+.disc{display:inline-flex;align-items:center;justify-content:center;width:auto;min-width:2.4rem;min-height:2.4rem;height:auto;padding:.2rem .35rem;border:2px solid var(--ink);border-radius:999px;font-family:var(--sans);font-size:.68rem;font-weight:700;background:#fff;text-align:center;line-height:1.05;white-space:nowrap}
+
+
+.barmodel .bar{display:flex;width:100%;flex:none;min-width:0;align-items:stretch;box-sizing:border-box}
+.barmodel .bar .seg{flex:1 1 0;width:auto;min-width:0;padding:.15rem .3rem;font-size:.78rem}
+
+
+.barmodel .lbl{width:8.2rem;line-height:1.2}
+.barmodel .stack{flex:1;min-width:0;display:flex;flex-direction:column}
+.barmodel .caps{display:flex;font-size:.78rem;color:var(--ink);margin-top:.2rem;font-weight:600}
+.barmodel .caps span{text-align:center;line-height:1.2;padding:0 .15rem}
+.barmodel .bar .seg{height:2rem}
+
+
+/* Key terms: compact Frayer cards */
+.keyterms{margin:.8rem 0 1.1rem;padding:.7rem .85rem .5rem;border:1px solid var(--rule);background:#f8f6f0;border-radius:4px}
+.keyterms > h4{margin:0 0 .55rem;font-family:var(--sans);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
+.term{margin:0 0 .7rem;padding:0 0 .65rem;border-bottom:1px solid var(--rule);scroll-margin-top:5.5rem}
+.term:last-child{margin:0;padding:0;border:none}
+.term h5{margin:0 0 .35rem;font-size:1.05rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;font-family:var(--sans)}
+.term .symbol{font-weight:500;color:var(--muted);font-size:.92rem;font-family:var(--serif)}
+.frayer{display:grid;grid-template-columns:1fr 1fr;gap:.35rem .8rem;margin:0}
+.frayer > div{margin:0;min-width:0}
+.frayer dt{font-family:var(--sans);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0}
+.frayer dd{margin:.12rem 0 0;font-size:.95rem}
+.frayer .wide{grid-column:1 / -1}
+.term .diagram{margin:.45rem 0 .15rem;max-width:100%}
+.term .diagram svg{display:block;max-width:100%;height:auto}
+.glossary-list{margin:0 0 1.5rem;padding:0;list-style:none}
+.glossary-list li{margin:0 0 .55rem;padding:.35rem 0;border-bottom:1px solid var(--rule)}
+.glossary-list .term-name{font-weight:700}
+@media (max-width:700px){.frayer{grid-template-columns:1fr}}
+@media print{.term .listen, .keyterms button.listen{display:none !important}}
+
+
+/* Model conversations and role-play */
+.dialogue { margin: 1.2rem 0; padding: .85rem 1rem 1rem; border: 1px solid var(--rule); border-radius: 6px; background: var(--card); }
+.dialogue > h3 { font-family: var(--sans); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 .45rem; color: var(--accent); font-weight: 700; }
+.dialogue .scene { font-family: var(--sans); font-size: .88rem; color: var(--muted); margin: 0 0 .7rem; }
+.dialogue .line { margin: .45rem 0; }
+.dialogue .who { font-family: var(--sans); font-weight: 700; margin-right: .35rem; }
+.dialogue .gloss, .gloss { color: var(--muted); font-size: .92em; }
+.dialogue .line .gloss { display: block; margin-left: 0; padding-left: 0; font-style: italic; }
+.roleplay .blank, .blank { display: inline-block; min-width: 12rem; border-bottom: 1px solid var(--ink); height: 1em; vertical-align: baseline; }
+.tag { font-family: var(--sans); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: 999px; padding: .05rem .45rem; color: var(--muted); white-space: nowrap; }
+td .tag { margin-left: .25rem; }
+.unit-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.unit-cards a { display: block; padding: 1rem 1.1rem; border: 1px solid var(--rule); border-radius: 6px; background: var(--card); text-decoration: none; color: var(--ink); }
+.unit-cards a strong { display: block; font-size: 1.05rem; color: var(--accent); }
+.unit-cards a span { font-size: .9rem; color: var(--muted); }
