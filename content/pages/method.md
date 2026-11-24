@@ -26,4 +26,4 @@ It is not a sentence-translation drill, a streak, or a tree of unlocked skills. 
 
 ## Later work
 
-Units 1–6 are the beginner start. Further beginner units, and a path toward more advanced conversation, are not in this course yet.
+Units 1–9 are the beginner start. Further beginner units, and a path toward more advanced conversation, are not in this course yet.

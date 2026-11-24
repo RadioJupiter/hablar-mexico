@@ -3,13 +3,41 @@
   "storage_key": "hablar-mexico",
   "footer": "A private course in spoken Mexican Spanish. No accounts and no tracking.",
   "nav": [
-    ["Home", "index.html"],
-    ["Units", "units.html"],
-    ["Review sheets", "printables/index.html"],
-    ["How it works", "method.html"],
-    ["Sources", "sources.html"]
+    [
+      "Home",
+      "index.html"
+    ],
+    [
+      "Units",
+      "units.html"
+    ],
+    [
+      "Review sheets",
+      "printables/index.html"
+    ],
+    [
+      "How it works",
+      "method.html"
+    ],
+    [
+      "Sources",
+      "sources.html"
+    ]
   ],
-  "days": ["u01", "u02", "u03", "u04", "u05", "u06"],
-  "timetable": {"days": [], "rows": []},
+  "days": [
+    "u01",
+    "u02",
+    "u03",
+    "u04",
+    "u05",
+    "u06",
+    "u07",
+    "u08",
+    "u09"
+  ],
+  "timetable": {
+    "days": [],
+    "rows": []
+  },
   "has_printables": true
 }

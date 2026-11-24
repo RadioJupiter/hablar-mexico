@@ -2,7 +2,7 @@
 
 A beginner course in **spoken Mexican Spanish** for an adult English speaker. The aim is conversation you can use in Mexico: greetings, ordering food, asking prices, finding your way, meeting people, and being a guest. It is not a translation-drill app, and it is not a course in the Spanish of Spain.
 
-This repository is the first stretch of the beginner level: the method and Units 1–6. Later units are not in this tree yet.
+This repository is the first stretch of the beginner level: the method and Units 1–9. Later units are not in this tree yet.
 
 ## How to study
 

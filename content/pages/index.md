@@ -2,7 +2,7 @@
 
 A course in spoken Mexican Spanish, built for real conversation: the things you say at a taquería, in a market, on the street, and in someone's home. It is written for an adult who already reads English. You study by listening, repeating, and speaking, not by translating made-up sentences.
 
-This first stretch is the beginner start: six units. Work through them in order. Each one is a situation you will actually meet in Mexico.
+This first stretch is the beginner start: nine units. Work through them in order. Each one is a situation you will actually meet in Mexico.
 
 <div class="unit-cards">
 <a href="units/u01.html"><strong>Unit 1 · Greetings and small talk</strong><span>Hola, tú and usted, ¿qué onda?, and ¿mande?</span></a>
@@ -11,6 +11,9 @@ This first stretch is the beginner start: six units. Work through them in order.
 <a href="units/u04.html"><strong>Unit 4 · Directions and transport</strong><span>Finding a place, and catching a camión.</span></a>
 <a href="units/u05.html"><strong>Unit 5 · Meeting people</strong><span>Names, introductions, and family talk.</span></a>
 <a href="units/u06.html"><strong>Unit 6 · Invitations and being a guest</strong><span>Making a plan, coming in, and sitting down to eat.</span></a>
+<a href="units/u07.html"><strong>Unit 7 · The corner store and the pharmacy</strong><span>Counters, cards and cash, and something for a headache.</span></a>
+<a href="units/u08.html"><strong>Unit 8 · Likes, plans, and the weather</strong><span>Gustar, weekend plans, and ¡qué calor!</span></a>
+<a href="units/u09.html"><strong>Unit 9 · When something goes wrong</strong><span>No entiendo, getting help, and me duele.</span></a>
 </div>
 
 ## How to use a unit
